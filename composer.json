@@ -1,0 +1,47 @@
+{
+    "name": "suin/japannetbank-gmail-to-slack",
+    "type": "library",
+    "description": "Send notifications from Japan Net Back to slack",
+    "keywords": [
+        "banking",
+        "finance",
+        "japan-net-back"
+    ],
+    "homepage": "https://github.com/suin/php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "suin",
+            "email": "suinyeze@gmail.com",
+            "homepage": "https://github.com/suin",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/suin/php/issues"
+    },
+    "require": {
+        "php": ">=7.1 <7.4.0",
+        "google/apiclient": "^2.0",
+        "google/apiclient-services": "^0.104.0",
+        "maknz/slack": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Suin\\Jnb\\GmailToSlack\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Suin\\Jnb\\GmailToSlack\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "bin": [
+        "bin/"
+    ]
+}
